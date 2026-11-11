@@ -155,7 +155,7 @@ public class CoffeeMaker {
             inventory.setMilk(inventory.getMilk() - r.getAmtMilk());
             inventory.setSugar(inventory.getSugar() - r.getAmtSugar());
             inventory.setChocolate(inventory.getChocolate() - r.getAmtChocolate());
-            return amtPaid;
+            return amtPaid - r.getPrice();
         } else {
             return amtPaid;
         }
